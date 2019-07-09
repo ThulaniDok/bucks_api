@@ -1,20 +1,4 @@
-var mysql = require('mysql');
-
-// database connection details
- con = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "password",
-    database: "buck_boost"
-  });
-
-  // connect to database
- con.connect(function(err) {
-    if (err) {
-        throw err
-    }
-    console.log("DB Connected!")
-});
+const db = require('./db');
 
 
 // View team squad
